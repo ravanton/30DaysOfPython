@@ -1,5 +1,6 @@
 def main():
-
+    x = get_int()
+    print(f"x is {x}")
 
 def get_int():
     while True:
@@ -10,6 +11,5 @@ def get_int():
             print("x is not an integer")
         else:
             break
-
-    print(f"x is {x}")
-    
+        return x
+main()   
