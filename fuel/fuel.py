@@ -13,3 +13,8 @@ while True():
         # Check if it less than 1 stop the loop 
         if f <= 1:
             break 
+    except(ValueError, ZeroDivisionError):
+        pass
+# Multiply percentage by 100
+p = f * 100
+# Check if percentage is less than 1, print E
