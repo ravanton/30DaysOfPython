@@ -1,5 +1,5 @@
 # While nice
-while True():
+while True:
     # Get user's input
     fuel = input("Fraction: ")
     try:
@@ -16,5 +16,12 @@ while True():
     except(ValueError, ZeroDivisionError):
         pass
 # Multiply percentage by 100
-p = f * 100
+p = int(f * 100)
 # Check if percentage is less than 1, print E
+if p <= 1:
+    print("E")
+# Check if percentage is greater  than 99, print F
+elif p >= 99:
+    print("F")
+# Otherwise, print the %
+else: print(f"{p}%")
