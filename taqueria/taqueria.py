@@ -14,4 +14,7 @@ menu = {
 total_amount = 0
 # Loop forever 
 while True:
+    try:
+        # Get user input
+        item = input("Item: ").title()
     
