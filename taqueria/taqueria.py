@@ -21,4 +21,9 @@ while True:
         if item in menu:
             # Add the item price to total_amount 
             total_amount += menu[item]
+            # Print the current total_amount
+            print("Total: $", end="")
+            print(total_amount)
+    except EOFError:
+        # Print a new line and stop the loop 
     
