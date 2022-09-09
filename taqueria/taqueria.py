@@ -10,3 +10,8 @@ menu = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
+# Set total amount to 0
+total_amount = 0
+# Loop forever 
+while True:
+    
