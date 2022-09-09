@@ -23,7 +23,9 @@ while True:
             total_amount += menu[item]
             # Print the current total_amount
             print("Total: $", end="")
-            print(total_amount)
+            print("{:.2f}".format(total_amount))
     except EOFError:
         # Print a new line and stop the loop 
+        print()
+        break
     
