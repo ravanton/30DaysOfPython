@@ -1,4 +1,4 @@
-# Create dic
+# Create dict
 menu = {
     "Baja Taco": 4.00,
     "Burrito": 7.50,
@@ -17,4 +17,8 @@ while True:
     try:
         # Get user input
         item = input("Item: ").title()
+        # Check if item is already  in the dict
+        if item in menu:
+            # Add the item price to total_amount 
+            total_amount += menu[item]
     
