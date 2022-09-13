@@ -1,0 +1,2 @@
+# Create empty dicrionary
+grocery = {}
