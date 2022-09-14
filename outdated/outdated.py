@@ -13,3 +13,7 @@ months =     [
     "November",
     "December"
 ]
+# Loop forever
+while True:
+    #  Get user input
+    date = input("Date: ")
