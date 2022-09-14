@@ -29,5 +29,8 @@ while True:
             old_month, old_day, old_year = date.split(" ")
             # Find  the number of the month 
             for i in range(len(months)):
-                
+                if old_month == months[i]
+                    month = i + 1
+            # Remove comma from day variable 
+            day = old_day.replace(",","")
             
