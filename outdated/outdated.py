@@ -17,3 +17,6 @@ months =     [
 while True:
     #  Get user input
     date = input("Date: ")
+    try:
+        # Split the date by /
+       month, day, year = date.split("/")
