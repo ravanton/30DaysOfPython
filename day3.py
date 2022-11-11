@@ -52,10 +52,33 @@ print("Area = ", area)
 print("Perimeter rectangle = ", perimeter_rectangle)
 
 #7 Get radius of a circle using prompt. Calculate the area (area = pi x r x r) and circumference (c = 2 x pi x r) where pi = 3.14.
-radius = int(input("Enter radius:"))
+radius = int(input("Enter radius: "))
 
 area = 3.14 * radius ** 2
 
 circumference = 2 * 3.14 * radius
 print("Area = ", area)
 print("Circumference =", circumference)
+#8 Calculate the slope, x-intercept and y-intercept of y = 2x -2
+x = input("Enter x: ")
+y = x ** 2 + 6 * x + 9
+print(x)
+
+print("on" not in ("python" and "dracon"))
+print(len("python") > len("python"))
+
+x = float((len("python")))
+y = str(x)
+print(type(y))
+
+# Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
+number = int(input("Enter number for check: "))
+
+
+if number % 2 == 0 :
+
+   print("Even")
+
+else:
+
+   print("Not even")
