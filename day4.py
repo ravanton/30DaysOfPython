@@ -15,3 +15,4 @@ print(f"The area of a circle with radius {radius} is {area:.0f} meters square.")
 
 # Use a tab escape sequence to write the following lines
 print("Name\tAge\tCountry\tCity")
+print("\nAnton\t250\tUSA\t\'Miami\'")
