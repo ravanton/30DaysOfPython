@@ -16,3 +16,11 @@ print(f"The area of a circle with radius {radius} is {area:.0f} meters square.")
 # Use a tab escape sequence to write the following lines
 print("Name\tAge\tCountry\tCity")
 print("\nAnton\t250\tUSA\t\'Miami\'")
+
+# Use the new line escape sequence to separate the following sentences
+print("I am enjoying this challenge.\nI just wonder what is next.")
+
+# Join the list with a hash with space string.
+list = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+hash = "# ".join(list)
+print(hash)
