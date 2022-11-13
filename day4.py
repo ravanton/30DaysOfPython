@@ -24,3 +24,7 @@ print("I am enjoying this challenge.\nI just wonder what is next.")
 list = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
 hash = "# ".join(list)
 print(hash)
+
+str = "Coding For All".capitalize().title()
+print(str.replace("Coding", "Python3"))
+print(str.startswith("Coding"))
