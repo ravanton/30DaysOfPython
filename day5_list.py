@@ -41,3 +41,10 @@ zero = [0]
 negative_numbers = [-5,-4,-3,-2,-1]
 integers = negative_numbers + zero + positive_numbers
 print(integers) # [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
+
+# Joining using extend() method The extend() method allows to append list in a list. See the example below.
+# syntax
+list1 = ['item1', 'item2']
+list2 = ['item3', 'item4', 'item5']
+list1.extend(list2)
+print(list1)
