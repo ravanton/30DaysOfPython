@@ -26,5 +26,8 @@ hash = "# ".join(list)
 print(hash)
 
 str = "Coding For All".capitalize().title()
+null = str[0]
+print(null)
 print(str.replace("Coding", "Python3"))
 print(str.startswith("Coding"))
+print(str.replace("Coding", ""))
