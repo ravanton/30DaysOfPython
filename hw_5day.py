@@ -41,3 +41,35 @@ print("#; ".join(it_companies))
 it_companies.reverse()
 print(it_companies)
 
+# Slice out the first 3 companies from the list
+print(it_companies[3:9])
+# Slice out the last 3 companies from the list
+print(it_companies[0:6])
+#  Slice out the middle IT company or companies from the list
+print(it_companies[3:5])
+# Remove the first IT company from the list
+del it_companies[0]
+# Remove the middle IT company or companies from the list
+del it_companies[4]
+# Remove the last IT company from the list
+del it_companies[-1]
+# Remove all IT companies from the list
+it_companies.clear()
+# Destroy the IT companies list
+del it_companies
+
+# Join the following lists:
+
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+
+
+front_end.extend(back_end)
+print(front_end)
+
+full_stack = front_end.copy()
+print(full_stack)
+full_stack.insert(5, "Python3")
+full_stack.insert(6, "SQL")
+
+print(full_stack)
