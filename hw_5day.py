@@ -63,7 +63,7 @@ del it_companies
 front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 back_end = ['Node','Express', 'MongoDB']
 
-
+# After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack. Then insert Python and SQL after Redux.
 front_end.extend(back_end)
 print(front_end)
 
@@ -73,3 +73,30 @@ full_stack.insert(5, "Python3")
 full_stack.insert(6, "SQL")
 
 print(full_stack)
+
+# Exercises: Level 2
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+# Отсортируйте список и найдите минимальный и максимальный возраст
+ages.sort()
+max_ages = max(ages)
+min_ages = min(ages)
+print(max_ages)
+
+ages.append(19)
+ages.append(26)
+
+# Найдите средний возраст (сумма всех предметов, деленная на их количество)
+average_age = sum(ages) / len(ages)
+print(average_age)
+
+# Find the range of the ages (max minus min)
+range_ages = max(ages) - min(ages)
+print(range_ages)
+
+# Compare the value of (min - average) and (max - average), use abs() method
+min_average_age = abs((max_ages) / len(ages))
+max_average_age = abs((min_ages) / len(ages))
+print(min_average_age)
+print(max_average_age)
+print(max_average_age == min_average_age)
+

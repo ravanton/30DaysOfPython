@@ -30,3 +30,4 @@ str = "Coding For All".capitalize().title()
 print(str.replace("Coding", "Python3"))
 print(str.startswith("Coding"))
 print(str.replace("Coding", ""))
+
