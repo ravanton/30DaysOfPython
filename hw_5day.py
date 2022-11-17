@@ -100,3 +100,8 @@ print(min_average_age)
 print(max_average_age)
 print(max_average_age == min_average_age)
 
+#  Unpack the first three countries and the rest as scandic countries.
+countries = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+Ch, Ru, Us, *scandic = countries
+print("Scandic countries: ", scandic)
+
