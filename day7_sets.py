@@ -32,3 +32,25 @@ it_companies.remove('Ubisoft')
 print(it_companies)
 # What is the difference between remove and discard
 """Если элемент не найден , метод remove() вызовет ошибки, поэтому полезно проверить, существует ли элемент в заданном наборе. Однако метод discard() не вызывает никаких ошибок. """
+
+# Exercises: Level 2
+# Join A and B
+C = A.union(B)
+print(C)
+# Find A intersection B
+print(A.intersection(B))
+# Is A subset of B
+print("Is A subset of B: ", A.issubset(B))
+# Are A and B disjoint sets
+print("Are A and B disjoint sets: ", A.isdisjoint(B))
+# Join A with B and B with A
+A_with_B = A.union(B)
+B_with_A = B.union(A)
+print(A_with_B)
+print(B_with_A)
+# What is the symmetric difference between A and B
+print(A.symmetric_difference(B))
+
+# Delete the sets completely
+del A
+del B
