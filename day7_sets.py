@@ -50,7 +50,21 @@ print(A_with_B)
 print(B_with_A)
 # What is the symmetric difference between A and B
 print(A.symmetric_difference(B))
-
+# {27,28}
 # Delete the sets completely
 del A
 del B
+
+# Exercises: Level 3
+# Convert the ages to a set and compare the length of the list and the set, which one is bigger?
+'''Преобразование списка в набор удаляет дубликаты, и будут зарезервированы только уникальные элементы.'''
+set_age = set(age)
+print(set_age)
+print(len(age) == len(set_age))
+# Explain the difference between the following data types: string, list, tuple and set
+
+# I am a teacher and I love to inspire and teach people. How many unique words have been used in the sentence? Use the split methods and set to get the unique words.
+words = ("I am a teacher and I love to inspire and teach people").split()
+set_words = set(words)
+print(set_words)
+print(len(set_words))
