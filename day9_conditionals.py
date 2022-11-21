@@ -48,3 +48,11 @@ elif a == 0:
     print('A is zero')
 else:
     print('A is negative')
+
+# Get user input using input(“Enter your age: ”). If user is 18 or older, give feedback: You are old enough to drive. If below 18 give feedback to wait for the missing amount of years. Output:
+years = int(input("Enter your age: "))
+years_learn_driver = 18 - years
+if years >= 18:
+    print("You are old enough to drive.\nOutput:") 
+else:
+    print(f"You need {years_learn_driver} more years to learn to drive.")
