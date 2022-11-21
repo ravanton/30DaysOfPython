@@ -76,3 +76,27 @@ elif A < B:
     print(f"{A} is less {B} ")
 else:
     print(f"{A} is equal to {B} ")
+
+### Exercises: Level 2
+score = int(input("Score: "))
+
+if score >= 90:
+    print("Grade: A")
+elif  89 >= score  >= 70:
+    print("Grade: B")
+elif 69 >= score >= 60:
+    print("Grade: C")
+elif 59 >= score >= 50:
+    print("Grade: D")
+else:
+    print("Grade: F")
+
+
+autumn = ("September", "October", "November")
+winter =("December", "January", "February")
+spring = ("March", "April", "May")
+summer =("June", "July", "August")
+
+season = input("Enter season: ")
+if season in autumn:
+    print(" is Autumn")
