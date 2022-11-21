@@ -66,3 +66,13 @@ if my_age == your_age:
     print("Yep it's my years!")
 else:
     print(f"You are {older_me} years older than me.")
+
+# 3 Get two numbers from the user using input prompt. If a is greater than b return a is greater than b, if a is less b return a is smaller than b, else a is equal to b. Output:
+A = input("Enter number one: ")
+B = input("Enter number two: ")
+if A > B:
+    print(f"{A} is greate than {B} ")
+elif A < B:
+    print(f"{A} is less {B} ")
+else:
+    print(f"{A} is equal to {B} ")
