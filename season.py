@@ -4,6 +4,7 @@ spring = ("March", "April", "May")
 summer =("June", "July", "August")
 
 season = input("Enter season: ").title()
+
 if season in autumn:
     print(" is Autumn")
 elif season in winter:
