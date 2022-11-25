@@ -125,3 +125,5 @@ if new_fruits  not in fruits:
     print(f"New Fruits add to list, {fruits.append(new_fruits)}", (fruits))
 else:
     print("That fruit already exist in the list")
+
+
