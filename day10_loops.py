@@ -12,3 +12,7 @@ while number < 10:
     print(number)
 
 
+for a in range(7):
+    for x in range(a + 1):
+        print("@", end="")
+    print("\n")
