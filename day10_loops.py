@@ -23,3 +23,18 @@ for a in range(8):
     for x in range(8):
         print("@ ", end="")
     print('\n')
+
+# Used the for loop to display the multiplication table of 0 x 10.
+
+
+for a in range(1, 11):
+    for x in range(11):
+        
+        print(f"{a} x {x} = {a * x}")
+    print("\n")
+
+# Iterate through the list, ['Python', 'Numpy','Pandas','Django', 'Flask'] using a for loop and print out the items.
+lang = ['Python', 'Numpy','Pandas','Django', 'Flask']
+
+for a in lang:
+    print(a,"\n")
