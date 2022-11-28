@@ -58,4 +58,15 @@ for w in num:
 a = range(101)
 
 sum_range = sum(a)
-print(f" The sum of all number is {sum_range}")
+print(f" The sum of all number is {sum_range}.")
+
+# Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+odd_total = 0
+even_total = 0
+
+for a in range(101):
+    if a % 2 == 0:
+        even_total = even_total + a
+    else:
+        odd_total = odd_total + a
+print(f"The sum of all evens is {even_total}. And the sum of all odds is {odd_total}.")
