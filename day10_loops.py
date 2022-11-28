@@ -38,7 +38,17 @@ lang = ['Python', 'Numpy','Pandas','Django', 'Flask']
 
 for a in lang:
     print(a,"\n")
+
 # Use for loop to iterate from 0 to 100 and print only even numbers
 
-for a in range(0,100,2):
-    print(f"Print  even numbers: {a}")
+for a in range(100):
+    if a % 2 == 0:
+
+        print(f"Print  even numbers: {a}")
+
+# Use for loop to iterate from 0 to 100 and print only odd numbers
+num = range(100)
+
+for w in num:
+    if w % 2 != 0:
+        print(f"Print odd number: {w}")
