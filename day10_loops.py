@@ -41,14 +41,21 @@ for a in lang:
 
 # Use for loop to iterate from 0 to 100 and print only even numbers
 
-for a in range(100):
+for a in range(101):
     if a % 2 == 0:
 
         print(f"Print  even numbers: {a}")
 
 # Use for loop to iterate from 0 to 100 and print only odd numbers
-num = range(100)
+num = range(101)
 
 for w in num:
     if w % 2 != 0:
         print(f"Print odd number: {w}")
+
+# Exercises: Level 2
+# Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+a = range(101)
+
+sum_range = sum(a)
+print(f" The sum of all number is {sum_range}")
