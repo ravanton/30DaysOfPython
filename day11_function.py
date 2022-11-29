@@ -29,8 +29,16 @@ def add_two_number(num1, num2):
     return total
 print(add_two_number(10,2))
 
+# Area of a circle is calculated as follows: area = π x r x r. Write a function that calculates area_of_circle.
 def area_of_circle(r):
     PI = 3.14
     area = PI * r * r
     return area
-print("Area of  circule = ", area_of_circle(2))
+print("Area of  circule =", area_of_circle(2))
+
+def  add_all_nums(*nums):
+    total = 0
+    for num in nums:
+         total += num
+    return total
+print(type("Total all numbers:", add_all_nums(2,3,45,65,3,254,65)))
