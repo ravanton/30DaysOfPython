@@ -66,9 +66,9 @@ even_total = 0
 
 for a in range(101):
     if a % 2 == 0:
-        even_total = even_total + a
+        even_total += a
     else:
-        odd_total = odd_total + a
+        odd_total += a
 print(f"The sum of all evens is {even_total}. And the sum of all odds is {odd_total}.")
 
 # Exercises: Level 3
