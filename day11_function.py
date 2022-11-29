@@ -36,9 +36,11 @@ def area_of_circle(r):
     return area
 print("Area of  circule =", area_of_circle(2))
 
+# Write a function called add_all_nums which takes arbitrary number of arguments and sums all the arguments. Check if all the list items are number types. If not do give a reasonable feedback.
 def  add_all_nums(*nums):
     total = 0
     for num in nums:
          total += num
     return total
-print(type("Total all numbers:", add_all_nums(2,3,45,65,3,254,65)))
+print("Total all numbers:", add_all_nums(2,3,45,65,3,254,65))
+print(isinstance(add_all_nums, int)) 
