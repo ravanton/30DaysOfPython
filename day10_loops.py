@@ -70,3 +70,10 @@ for a in range(101):
     else:
         odd_total = odd_total + a
 print(f"The sum of all evens is {even_total}. And the sum of all odds is {odd_total}.")
+
+# Exercises: Level 3
+# This is a fruit list, ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop.
+fruits = ['banana', 'orange', 'mango', 'lemon']
+
+for h in reversed(fruits):
+    print(h)
