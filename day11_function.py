@@ -44,3 +44,11 @@ def  add_all_nums(*nums):
     return total
 print("Total all numbers:", add_all_nums(2,3,45,65,3,254,65))
 print(isinstance(add_all_nums, int)) 
+
+# Temperature in °C can be converted to °F using this formula: °F = (°C x 9/5) + 32. Write a function which converts °C to °F, convert_celsius_to-fahrenheit.
+def convert_celsius_to_fahrenheit(C):
+    
+    F = (C * 9/5 ) + 32
+    return F
+print("Converts °C to °F:", convert_celsius_to_fahrenheit(C = 32))
+
