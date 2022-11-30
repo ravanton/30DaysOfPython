@@ -52,3 +52,34 @@ def convert_celsius_to_fahrenheit(C):
     return F
 print("Converts °C to °F:", convert_celsius_to_fahrenheit(C = 32))
 
+# Write a function called check-season, it takes a month parameter and returns the season: Autumn, Winter, Spring or Summer.
+
+def check_season(month):
+
+    autumn = ("September", "October", "November")
+    winter =("December", "January", "February")
+    spring = ("March", "April", "May")
+    summer =("June", "July", "August")
+
+    
+
+    if month in autumn:
+        print("Autumn ")
+    elif month in winter:
+        print("Winter ")
+    elif month in spring:
+        print("Spring ")
+    else:
+        print("Summer ")
+    return month
+print(check_season(month="May"))
+print(check_season("June"))
+# Write a function called calculate_slope which return the slope of a linear equation
+def calculate_slope(y1, y2, x1, x2):
+    m = (y1 - y2) / (x1 - x2)
+    return m
+print("the slope of a linear equation:", calculate_slope(x1 = 2, x2 = 5, y1 = 5, y2 = 34))
+
+
+# Quadratic equation is calculated as follows: ax² + bx + c = 0. Write a function which calculates solution set of a quadratic equation, solve_quadratic_eqn.
+# Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list.
