@@ -78,8 +78,14 @@ print(check_season("June"))
 def calculate_slope(y1, y2, x1, x2):
     m = (y1 - y2) / (x1 - x2)
     return m
-print("the slope of a linear equation:", calculate_slope(x1 = 2, x2 = 5, y1 = 5, y2 = 34))
+print("The slope of a linear equation:", calculate_slope(x1 = 2, x2 = 5, y1 = 5, y2 = 34))
 
 
 # Quadratic equation is calculated as follows: ax² + bx + c = 0. Write a function which calculates solution set of a quadratic equation, solve_quadratic_eqn.
+def solve_quadratic_eqn():
+    pass
 # Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list.
+def print_list(list):
+    list = [1,2,3,4]
+    return list
+print(print_list(list))
