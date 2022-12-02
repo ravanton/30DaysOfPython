@@ -105,10 +105,11 @@ print(reverse_list("V","C","R"))
 
 # Declare a function named capitalize_list_items. It takes a list as a parameter and it returns a capitalized list of items
 
-def capitalize_list_items(m):
-    param = []
-
-    for h in m:
-        h.append(param).title()
-    return param
-print(capitalize_list_items('anton'))
+def capitalize_list_items(my_list):
+    new_list = []
+    
+    for h in my_list:
+        new_list.append(h.capitalize())
+    
+    return new_list
+print(capitalize_list_items(['anton']))
