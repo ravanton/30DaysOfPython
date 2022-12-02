@@ -85,7 +85,30 @@ print("The slope of a linear equation:", calculate_slope(x1 = 2, x2 = 5, y1 = 5,
 def solve_quadratic_eqn():
     pass
 # Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list.
-def print_list(list):
-    list = [1,2,3,4]
-    return list
-print(print_list(list))
+def print_list(*list_param):
+    result = []
+    for x in list_param:
+        result.append(x)
+    # result.append(list_param)
+    return result
+print(print_list(56,76,87))
+
+# Declare a function named reverse_list. It takes an array as a parameter and it returns the reverse of the array (use loops).
+def reverse_list(*list):
+    result = []
+
+    for i, _ in enumerate(list):
+        result.append(list[~i]) # use the backward indexing here
+    
+    return result
+print(reverse_list("V","C","R"))
+
+# Declare a function named capitalize_list_items. It takes a list as a parameter and it returns a capitalized list of items
+
+def capitalize_list_items(m):
+    param = []
+
+    for h in m:
+        h.append(param).title()
+    return param
+print(capitalize_list_items('anton'))
