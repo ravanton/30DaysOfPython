@@ -114,3 +114,15 @@ def capitalize_list_items(my_list):
     
     return new_list
 print(capitalize_list_items(['anton', 'developer']))
+
+# Объявите функцию с именем add_item. Он принимает список и параметры элемента. Он возвращает список с элементом, добавленным в конце.
+def add_item(list):
+
+    my_list = ['banana', 'orange', 'mango', 'lemon']
+
+    for s in list:
+        my_list.append(s)
+    return my_list
+
+
+print(add_item(['kiwi']))
