@@ -126,3 +126,14 @@ def add_item(list):
 
 
 print(add_item(['kiwi']))
+
+# Declare a function named remove_item. It takes a list and an item parameters. It returns a list with the item removed from it.
+def remove_item(remove):
+
+    fruits = ["apple", "mango", "watermelow"]
+
+    for f in remove:
+        fruits.remove(f)
+    return fruits
+
+print(remove_item( ["apple"]))
