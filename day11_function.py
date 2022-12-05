@@ -153,10 +153,17 @@ print(sum_of_numbers(100)) # 5050
 # Declare a function named sum_of_odds. It takes a number parameter and it adds all the odd numbers in that range.
 def sum_of_odds(numbers):
     total = 0 
-    for n in range(1, numbers + 1):
+    for n in range(numbers + 1):
         if n % 2 != 0:
             total += n
     return total
-print(sum_of_odds(5))
+print(sum_of_odds(4))
 
 # Declare a function named sum_of_even. It takes a number parameter and it adds all the even numbers in that - range.
+def sum_of_even(numbers):
+    total = 0
+    for number in range(numbers + 1):
+        if number % 2 == 0:
+            total += number
+    return total
+print(sum_of_even(4))
