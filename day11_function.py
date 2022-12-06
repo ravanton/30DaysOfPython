@@ -167,3 +167,22 @@ def sum_of_even(numbers):
             total += number
     return total
 print(sum_of_even(4))
+
+# Exercises: Level 2
+# Declare a function named evens_and_odds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+
+def evens_and_odds(number):
+    odd_total = 0
+    even_total = 0
+
+   
+    if int(number) % 2 == 0:
+        even_total += 1
+            
+        print(f"The number of even {even_total}")
+    else:
+         odd_total += 1
+    print(f"The number of odds {odd_total}")
+    
+print(evens_and_odds(100))
+
