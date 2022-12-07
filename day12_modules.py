@@ -1,4 +1,6 @@
+
 # mymodule.py file
+
 def generate_full_name(firstname, lastname):
     return firstname + ' ' + lastname
 
@@ -24,3 +26,19 @@ print(stdev(ages))      # ~2.3
 
 from math import pi as  PI
 print(PI) # 3.141592653589793
+
+# Writ a function which generates a six digit/character random_user_id
+
+
+
+import random
+
+def random_user_id():
+    
+
+    result_str = ''.join(random.choice("abcd345gkd967bpl") for i in range(7))
+    return result_str
+print(random_user_id())
+
+    
+
