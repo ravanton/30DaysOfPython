@@ -51,5 +51,14 @@ def  user_id_gen_by_user():
 print(user_id_gen_by_user())
 
 # Write a function named rgb_color_gen. It will generate rgb colors (3 values ranging from 0 to 255 each).
+import random
 
-
+def rgb_color_gen():
+    
+    for i in range(3):
+        r = random.randint(0,255)
+        g = random.randint(0,255)
+        b = random.randint(0,255)
+        rgb = (r,g,b)
+    return rgb
+print(f"rgb{rgb_color_gen()}")
