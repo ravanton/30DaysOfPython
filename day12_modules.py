@@ -38,6 +38,8 @@ def random_user_id():
 print(random_user_id())
 
 # Modify the previous task. Declare a function named user_id_gen_by_user. It doesn’t take any parameters but it takes two inputs using input(). One of the inputs is the number of characters and the second input is the number of IDs which are supposed to be generated.
+import random
+
 def  user_id_gen_by_user():
 
     number_of_characters = int(input("Enter number of characters: "))
@@ -76,3 +78,20 @@ def gen_random_hex_color():
         random.choices(hex_digits, k=6)
     )
 print(gen_random_hex_color())
+
+# Write a function list_of_rgb_colors which returns any number of RGB colors in an array.
+
+import random
+def list_of_rgb_colors(number):
+    rgb_color = []
+
+    
+    for i in range(number):
+            r = random.randint(0,255)
+            g = random.randint(0,255)
+            b = random.randint(0,255)
+            rgb = (r,g,b)
+        # rgb_color.append("rgb"+''.join([random.choice('ABCDEF0123456789') for i in range(6)]))
+            rgb_color.append(rgb)
+    return rgb_color
+print(list_of_rgb_colors(3))
