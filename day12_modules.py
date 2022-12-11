@@ -95,3 +95,21 @@ def list_of_rgb_colors(number):
             rgb_color.append(rgb)
     return rgb_color
 print(list_of_rgb_colors(3))
+
+# Call your function shuffle_list, it takes a list as a parameter and it returns a shuffled list
+
+def shuffle_list():
+    list = ["apple", "mango", "watermelow"]
+    random.shuffle(list)
+
+    return list
+
+print(shuffle_list())
+# Write a function which returns an array of seven random numbers in a range of 0-9. All the numbers must be unique.
+
+def gen_random_number_in_range(low, high, n):
+    a_list = list(range(low, high))
+
+    random.shuffle(a_list)
+    return a_list[:n]
+print(gen_random_number_in_range(0, 9, 7))
