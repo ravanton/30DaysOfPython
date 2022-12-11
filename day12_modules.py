@@ -105,6 +105,7 @@ def shuffle_list():
     return list
 
 print(shuffle_list())
+
 # Write a function which returns an array of seven random numbers in a range of 0-9. All the numbers must be unique.
 
 def gen_random_number_in_range(low, high, n):
