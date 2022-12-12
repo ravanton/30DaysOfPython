@@ -35,3 +35,29 @@ print(positive_even_numbers)
 list_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flattened_list = [ number for row in list_of_lists for number in row]
 print(flattened_list)
+
+# Creating a Lambda Function
+# syntax
+# x = lambda param1, param2, param3: param1 + param2 + param2
+# print(x(arg1, arg2, arg3))
+
+add_two_number = lambda a, b : a + b 
+print(add_two_number(5,9))
+
+# Self invoking lambda function
+print((lambda a, b: a + b)(2,3)) # 5 - need to encapsulate it in print() to see the result in the console
+
+square = lambda x : x ** 2
+print(square(4))
+
+# Multiple variables
+multiple_variable = lambda a, b, c: a ** 2 - 3 * b + 4 * c
+print(multiple_variable(5, 5, 3)) # 22
+ 
+def power(x):
+    return lambda n : x ** n
+
+cube = power(2)(3)
+print(cube)
+two_power_of_live = power(2)(5)
+print(two_power_of_live)
