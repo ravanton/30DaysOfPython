@@ -82,3 +82,5 @@ names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')],
 name_list = [''.join(inner) for inner in names] 
 
 print(name_list)
+
+# Change the following list of lists to a list of concatenated strings:
