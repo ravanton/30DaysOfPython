@@ -75,12 +75,15 @@ list_of_lists =[[[1, 2, 3]], [[4, 5, 6]], [[7, 8, 9]]]
 one_dimensional_list = [ number for row in list_of_lists for number in row]
 dimensional_list = [number for row in one_dimensional_list for number in row ]
 print(dimensional_list)
+
 # Using list comprehension create the following list of tuples:
 
-
 names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]
-name_list = [''.join(inner) for inner in names] 
 
-print(name_list)
+
+
 
 # Change the following list of lists to a list of concatenated strings:
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+dictionary = dict(zip(countries)) 
+print(dictionary)
