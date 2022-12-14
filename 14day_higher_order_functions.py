@@ -54,3 +54,25 @@ def add_ten():
 closure_result = add_ten()
 print(closure_result(5))  # 15
 print(closure_result(10))  # 20
+
+# Creating Decorators
+## Let us implement the example above with a decorator
+
+'''This decorator function is a higher order function
+that takes a function as a parameter'''
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+@uppercase_decorator
+def greeting():
+    return 'Welcome to Python'
+print(greeting())   # WELCOME TO PYTHON
+
+''' Python - Map Function
+The map() function is a built-in function that takes a function and iterable as parameters.
+
+    # syntax
+    map(function, iterable) '''
