@@ -91,3 +91,8 @@ number_str = ['1', '2', '3', '4', '5']
 
 number_int = map(int, number_str)
 print(list(number_int))
+
+# example
+names = ['Garry', 'Ron', 'Germiona', 'Draco']  # iterable
+names_with_upper_case = map(lambda name : name.upper(), names)
+print(list(names_with_upper_case))
