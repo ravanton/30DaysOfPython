@@ -76,3 +76,18 @@ The map() function is a built-in function that takes a function and iterable as 
 
     # syntax
     map(function, iterable) '''
+
+numbers = [1, 2, 3, 4, 5] # iterable
+def square(x):
+    return x ** 2
+numbers_squared = map(square, numbers)
+print(list(numbers_squared))    # [1, 4, 9, 16, 25]
+
+# Lets apply it with a lambda function
+numbers_squared = map(lambda x : x ** 2, numbers)
+print(list(numbers_squared))    # [1, 4, 9, 16, 25]
+
+number_str = ['1', '2', '3', '4', '5']
+
+number_int = map(int, number_str)
+print(list(number_int))
