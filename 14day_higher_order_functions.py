@@ -134,6 +134,7 @@ def containing_land(countries):
     return False
 land_country = filter(containing_land, countries)
 print(list(land_country))
+
 # Use filter to filter out countries having exactly six characters.
 def exactly_six_characters(country):
     if len(country) == 6:
@@ -142,4 +143,10 @@ def exactly_six_characters(country):
 countries_six_characters = filter(exactly_six_characters, countries)
 print(list(countries_six_characters))
 # Use filter to filter out countries containing six letters and more in the country list.
+def country_more_letter(country):
+    if len(country) >= 6:
+        return True
+    return False
+containing_more_letter = filter(country_more_letter, countries)
+print(list(containing_more_letter))
 # Use filter to filter out countries starting with an 'E'
