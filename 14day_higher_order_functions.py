@@ -121,4 +121,6 @@ country_uppercase = map(lambda country: country.upper() , countries)
 print(list(country_uppercase))
 
 # Use map to create a new list by changing each number to its square in the numbers list
+number_square = map(lambda x : x ** 2, numbers)
+print(list(number_square))
 # Use map to change each name to uppercase in the names list
