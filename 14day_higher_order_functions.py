@@ -93,6 +93,32 @@ number_int = map(int, number_str)
 print(list(number_int))
 
 # example
-names = ['Garry', 'Ron', 'Germiona', 'Draco']  # iterable
-names_with_upper_case = map(lambda name : name.upper(), names)
-print(list(names_with_upper_case))
+names = ['Garry', 'Ron', 'Hermione', 'Draco']  # iterable
+names_upper_cased = map(lambda name : name.upper(), names)
+print(list(names_upper_cased))
+
+
+
+# Exercises: Level 1
+countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
+names = ['Garry', 'Ron', 'Hermione', 'Draco']
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Use for loop to print each country in the countries list.
+for country in countries:
+    print(country)
+
+
+# Use for to print each name in the names list.
+for name in names:
+    print(name)
+
+# Use for to print each number in the numbers list.
+for number in numbers:
+    print(number)
+
+# Use map to create a new list by changing each country to uppercase in the countries list
+country_uppercase = map(lambda country: country.upper() , countries)
+print(list(country_uppercase))
+
+# Use map to create a new list by changing each number to its square in the numbers list
+# Use map to change each name to uppercase in the names list
