@@ -126,3 +126,14 @@ print(list(numbers_squared))
 # Use map to change each name to uppercase in the names list
 names_uppercase =map(lambda name: name.upper(), names)
 print(list(names_uppercase))
+
+# Use filter to filter out countries containing 'land'.
+def containing_land(countries):
+    if "land" in countries:
+        return True
+    return False
+land_country = filter(containing_land, countries)
+print(list(land_country))
+# Use filter to filter out countries having exactly six characters.
+# Use filter to filter out countries containing six letters and more in the country list.
+# Use filter to filter out countries starting with an 'E'
