@@ -150,3 +150,13 @@ def country_more_letter(country):
 containing_more_letter = filter(country_more_letter, countries)
 print(list(containing_more_letter))
 # Use filter to filter out countries starting with an 'E'
+def countries_with_e(countries):
+    start_letter = 'E'
+    with_e = []
+    for i in countries:
+        if(i.find(start_letter)==0):
+            with_e.append(i)
+        return True
+    return False
+print(list(countries_with_e))
+    
