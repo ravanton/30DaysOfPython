@@ -161,4 +161,9 @@ country_no_land = filter(filter_country,countries)
 print(list(country_no_land))
 
 print(*filter(lambda x: x[0] in 'I', countries))
-    
+
+# Declare a function called get_string_lists which takes a list as a parameter and then returns a list containing only string items.
+def get_string_list(my_list):
+    return list(filter(lambda x: isinstance(x, str), my_list))
+
+print(get_string_list([1, 2, 3, "Garry", "Hermiona", 233]))
