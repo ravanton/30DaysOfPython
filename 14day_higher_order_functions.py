@@ -100,7 +100,7 @@ print(list(names_upper_cased))
 
 
 # Exercises: Level 1
-countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
+countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland', 'Italy']
 names = ['Garry', 'Ron', 'Hermione', 'Draco']
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # Use for loop to print each country in the countries list.
@@ -128,8 +128,8 @@ names_uppercase =map(lambda name: name.upper(), names)
 print(list(names_uppercase))
 
 # Use filter to filter out countries containing 'land'.
-def containing_land(countries):
-    if "land" in countries:
+def containing_land(country):
+    if "land" in country:
         return True
     return False
 land_country = filter(containing_land, countries)
@@ -142,6 +142,7 @@ def exactly_six_characters(country):
     return False
 countries_six_characters = filter(exactly_six_characters, countries)
 print(list(countries_six_characters))
+
 # Use filter to filter out countries containing six letters and more in the country list.
 def country_more_letter(country):
     if len(country) >= 6:
@@ -149,14 +150,15 @@ def country_more_letter(country):
     return False
 containing_more_letter = filter(country_more_letter, countries)
 print(list(containing_more_letter))
+
 # Use filter to filter out countries starting with an 'E'
-def countries_with_e(countries):
-    start_letter = 'E'
-    with_e = []
-    for i in countries:
-        if(i.find(start_letter)==0):
-            with_e.append(i)
+def filter_country(country):
+    if country.startswith("E"):
         return True
     return False
-print(list(countries_with_e))
+
+country_no_land = filter(filter_country,countries)
+print(list(country_no_land))
+
+print(*filter(lambda x: x[0] in 'I', countries))
     
