@@ -167,3 +167,15 @@ def get_string_list(my_list):
     return list(filter(lambda x: isinstance(x, str), my_list))
 
 print(get_string_list([1, 2, 3, "Garry", "Hermiona", 233]))
+
+# Use reduce to sum all the numbers in the numbers list.
+from functools import reduce
+
+total = reduce(lambda x, y: x + y, numbers) # returns 55
+print(total)
+
+# Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
+def concatente_countries(x, y):
+    return f"{x}, {y}"
+all_countries = reduce(concatente_countries, countries)
+print(f"{all_countries} are north European countries")
