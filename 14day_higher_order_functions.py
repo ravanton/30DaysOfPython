@@ -187,6 +187,9 @@ print(f"{all_countries} are north European countries")
 
 # Declare a get_first_ten_countries function - it returns a list of first ten countries from the countries.js list in the data folder.
 def get_first_ten_countries(countries):
-    return countries[0:3]
+    return countries[0:11]
 print(get_first_ten_countries(countries))
 # Declare a get_last_ten_countries function that returns the last ten countries in the countries list.
+def get_last_ten_countries(countries):
+    return countries[-11 : -1]
+print(get_last_ten_countries(countries))
