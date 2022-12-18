@@ -179,3 +179,14 @@ def concatente_countries(x, y):
     return f"{x}, {y}"
 all_countries = reduce(concatente_countries, countries)
 print(f"{all_countries} are north European countries")
+
+# Declare a function called categorize_countries that returns a list of countries with some common pattern (you can find the countries list in this repository as countries.js(eg 'land', 'ia', 'island', 'stan')).
+# def categorize_countries(my_list):
+
+# Create a function returning a dictionary, where keys stand for starting letters of countries and values are the number of country names starting with that letter.
+
+# Declare a get_first_ten_countries function - it returns a list of first ten countries from the countries.js list in the data folder.
+def get_first_ten_countries(countries):
+    return countries[0:3]
+print(get_first_ten_countries(countries))
+# Declare a get_last_ten_countries function that returns the last ten countries in the countries list.
