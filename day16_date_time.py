@@ -46,3 +46,11 @@ print(f"{day}/{month}/{year}, {hour}:{minute}")
 # Format the current date using this format: "%m/%d/%Y, %H:%M:%S")
 t = now.strftime("%m/%d/%Y, %H:%M:%S") # mm/dd/YY H:M:S format
 print(f"strftime format: {t}")
+
+# Calculate the time difference between now and new year.
+from datetime import date
+today = date(year = 2022, month = 12, day = 20)
+new_year = date(year = 2023, month = 1, day = 1)
+
+time_left_for_newyear = new_year - today
+print("Time left for New Year:", time_left_for_newyear)
