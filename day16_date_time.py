@@ -42,3 +42,7 @@ minute = now.minute
 timestamp = now.timestamp()
 print('timestamp', timestamp)
 print(f"{day}/{month}/{year}, {hour}:{minute}")
+
+# Format the current date using this format: "%m/%d/%Y, %H:%M:%S")
+t = now.strftime("%m/%d/%Y, %H:%M:%S") # mm/dd/YY H:M:S format
+print(f"strftime format: {t}")
