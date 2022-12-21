@@ -33,3 +33,44 @@ try:
     print('You are {name}. And your age is {age}.')
 except Exception as e:
     print(e)
+
+# Packing and Unpacking Arguments in Python
+# We use two operators:
+
+# * for tuples
+# ** for dictionaries
+def sum_of_five_nums(a, b, c, d, e):
+    return a + b + c + d + e
+
+lst = [1, 2, 3, 4, 5]
+print(sum_of_five_nums(*lst))  # 15
+
+# Spreading in Python
+lst_one = [1, 2, 3]
+lst_two = [4, 5, 6, 7]
+lst = [0, *lst_one, *lst_two]
+print(lst)          # [0, 1, 2, 3, 4, 5, 6, 7]
+
+# Enumerate
+# If we are interested in an index of a list, we use enumerate built-in function to get the index of each item in the list.
+countries = ['Finland', 'Sweden', 'Norway']
+
+# for index, item in enumerate([20, 30, 40]):
+#     print(index, item)
+
+
+for index, i in enumerate(countries):
+    print('hi')
+    if i == 'Finland':
+        print('The country {i} has been found at index {index}')
+
+# Zip
+
+fruits = ['banana', 'orange', 'mango', 'lemon', 'lime']                    
+vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot']
+
+fruits_and_vegetables = []
+
+for h, v in zip (fruits, vegetables):
+    fruits_and_vegetables.append({'fruits':h, 'veg':v})
+print(fruits_and_vegetables)
