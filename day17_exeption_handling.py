@@ -71,6 +71,17 @@ vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot']
 
 fruits_and_vegetables = []
 
-for h, v in zip (fruits, vegetables):
+for h, v in zip(fruits, vegetables):
     fruits_and_vegetables.append({'fruits':h, 'veg':v})
 print(fruits_and_vegetables)
+
+# Exercises: Day 17
+#  Unpack the first five countries and store them in a variable nordic_countries, store Estonia and Russia in es, and ru respectively.
+names = ['Finland', 'Sweden', 'Norway','Denmark','Iceland', 'Estonia','Russia']
+
+nordic_coutries = names[0:5]
+es = names[5:6]
+ru = names[6:7]
+print(nordic_coutries)
+print(es)
+print(ru)
