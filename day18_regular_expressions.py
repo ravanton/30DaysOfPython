@@ -46,3 +46,6 @@ print(matches)  # ['Python', 'python']
 # Replacing a Substring
 matches_replaced = re.sub('[Pp]ython', 'Javascript', txt)
 print(matches_replaced)
+
+# What is the most frequent word in the following paragraph?
+paragraph = 'I love teaching.'
