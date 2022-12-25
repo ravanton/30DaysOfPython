@@ -57,5 +57,18 @@ paragraph = 'I love teaching. If you do not love teaching what else can you love
 split_it = paragraph.split()
 Counter = Counter(split_it)
 
-most_occur = Counter.most_common(20)
-print(most_occur)
+most_frequent_word = Counter.most_common(30)
+print(most_frequent_word)
+
+# The position of some particles on the horizontal x-axis are -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers from this whole text and find the distance between the two furthest particles.
+
+
+sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?'
+
+normal_string =re.sub("[^A-Z]", "", sentence,0,re.IGNORECASE)
+print(normal_string)
+# Create a regex pattern to match all characters except letter or numbers
+pattern = r'[^A-Za-z0-9]+'
+# Remove special characters from the string
+sentence = re.sub(pattern, '', sentence)
+print(sentence)
