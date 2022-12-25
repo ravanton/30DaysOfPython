@@ -63,12 +63,36 @@ print(most_frequent_word)
 # The position of some particles on the horizontal x-axis are -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers from this whole text and find the distance between the two furthest particles.
 
 
+
+# Clean the following text. After cleaning, count three most frequent words in the string.
 sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?'
 
-normal_string =re.sub("[^A-Z]", "", sentence,0,re.IGNORECASE)
-print(normal_string)
 # Create a regex pattern to match all characters except letter or numbers
 pattern = r'[^A-Za-z0-9]+'
 # Remove special characters from the string
 sentence = re.sub(pattern, '', sentence)
 print(sentence)
+
+# Exercises: Level 2
+# Write a pattern which identifies if a string is a valid python variable
+
+# Make a regular expression
+# for identify valid identifier
+regex = '^[A-Za-z_][A-Za-z0-9_]*'
+
+# Define a function for
+# identifying valid identifier
+def is_valid_variable(string):
+ 
+     # pass the regular expression
+     # and the string in search() method
+    if(re.search(regex, string)):
+        print("Valid Identifier")
+         
+    else:
+        print("Invalid Identifier")
+is_valid_variable('first_name')
+is_valid_variable('first_name') # True
+is_valid_variable('first-name') # False
+is_valid_variable('1first_name') # False
+is_valid_variable('firstname') # True
