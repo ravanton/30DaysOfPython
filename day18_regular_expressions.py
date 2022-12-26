@@ -91,7 +91,7 @@ def is_valid_variable(string):
          
     else:
         print("Invalid Identifier")
-is_valid_variable('first_name')
+
 is_valid_variable('first_name') # True
 is_valid_variable('first-name') # False
 is_valid_variable('1first_name') # False
