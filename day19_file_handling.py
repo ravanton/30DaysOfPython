@@ -6,8 +6,30 @@
 # # Syntax
 # open('filename', mode) # mode(r, a, w, x, t,b)  could be to read, write, update
 
-f = open('./files/reading_file_example.txt')
-txt = f.read()
-print(type(txt))
-print(txt)
-f.close()
+with open('./files/reading_file_example.txt') as f:
+    lines = f.read().splitlines()
+    print(type(lines))
+    print(lines)
+    
+# Deleting Files
+import os
+if os.path.exists('./files/example.txt'):
+    os.remove('./files/example.txt')
+else:
+    print('The file does not exist')
+
+# Changing JSON to Dictionary
+# To change a JSON to a dictionary, first we import the json module and then we use loads method.
+import json
+# JSON
+person_json = '''{
+    "name": "Asabeneh",
+    "country": "Finland",
+    "city": "Helsinki",
+    "skills": ["JavaScrip", "React", "Python"]
+}'''
+# let's change JSON to dictionary
+person_dct = json.loads(person_json)
+print(type(person_dct))
+print(person_dct)
+print(person_dct['name'])
