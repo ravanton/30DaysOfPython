@@ -54,3 +54,30 @@ p = Person()
 print(p.person_info())
 p = Person("Garry", "D", 23, "New york")
 print(p.person_info())
+
+# Method to Modify Class Default Values
+# In the example below, the person class, all the constructor parameters have default values. In addition to that, we have skills parameter, which we can access using a method. Let us create add_skill method to add skills to the skills list.
+class Person():
+    def __init__(self, firstname = 'Anton', lastname = "R", age = 22, city = "Kiev"):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.age = age
+        self.city = city
+        self.skills = []
+
+    def person_info(self):
+        return (f"{self.firstname} {self.lastname} is {self.age} year old. He lives in {self.city}")
+    def add_skill(self, skill):
+        self.skills.append(skill)
+
+p1 = Person()
+print(p1.person_info())
+p1.add_skill = ('Python')
+p1.add_skill = ('Javascript')
+p1.add_skill = ('Git')
+print(p1.skills)
+
+p2 = Person("Garry", "D", 23, "New york")
+print(p2.person_info())
+print(p1.skills)
+print(p2.skills)
