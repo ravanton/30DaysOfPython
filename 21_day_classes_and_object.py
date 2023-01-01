@@ -85,7 +85,15 @@ print(p2.skills)
 # Inheritance
 # Using inheritance we can reuse parent class code. Inheritance allows us to define a class that inherits all the methods and properties from parent class. The parent class or super or base class is the class which gives all the methods and properties. Child class is the class that inherits from another or parent class. Let us create a student class by inheriting from person class.
 class Student(Person):
-    pass
+    
+    def __init__ (self, firstname='Asabeneh', lastname='Yetayeh',age=250, city='Helsinki', gender='male'):
+        self.gender = gender
+        # Overriding parent method
+        super().__init__(firstname, lastname,age,city)
+    def person_info(self):
+        gender = 'He' if self.gender =='male' else 'She'
+        return f'{self.firstname} {self.lastname} is {self.age} years old. {gender} lives in {self.city}.'
+    
 
 h1 = Student("Hermiona", "Dginger", 23, "London")
 h2 = Student("Ron", "Wizli", 24, "London")
@@ -100,3 +108,7 @@ h2.add_skill('Organizing')
 h2.add_skill('Marketing')
 h2.add_skill('Digital Marketing')
 print(h2.skills)
+
+
+
+
