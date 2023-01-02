@@ -110,5 +110,26 @@ h2.add_skill('Digital Marketing')
 print(h2.skills)
 
 
+# Exercises: Level 2
+# Create a class called PersonAccount. It has firstname, lastname, incomes, expenses properties and it has total_income, total_expense, account_info, add_income, add_expense and account_balance methods. Incomes is a set of incomes and its description. The same goes for expenses.
+
+class PersonAccount():
+    def __init__(self, firstname, lastname, incomes, properties):
+        self.firstname = firstname
+        self.lasttname = lastname
+        self.incomes = incomes
+        self.properies = properties
+    def total_income(self):
+        pass
+    def total_expense(self):
+        pass
+    def account_info(self):
+        pass
+    def add_income(self):
+        pass
+    def add_expense(self):
+        pass
+    def account_balance(self):
+        pass
 
 
