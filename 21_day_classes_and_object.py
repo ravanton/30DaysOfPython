@@ -119,10 +119,12 @@ class PersonAccount():
         self.lasttname = lastname
         self.incomes = incomes
         self.properies = properties
+
     def total_income(self):
-        pass
+        return (f"Total income: {self.incomes}")
+        
     def total_expense(self):
-        pass
+        return (f"Total expense: {self.properies}")
     def account_info(self):
         pass
     def add_income(self):
@@ -131,5 +133,7 @@ class PersonAccount():
         pass
     def account_balance(self):
         pass
-
+h5 = PersonAccount("Anton", "R", 5000, 2500)
+print(h5.total_income())
+print(h5.total_expense())
 
