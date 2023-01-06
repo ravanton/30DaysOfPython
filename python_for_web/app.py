@@ -1,17 +1,24 @@
 # let's import the flask
-from flask import Flask
+from flask import Flask, render_template, request, redirect, url_for
 import os # importing operating system module
 
 app = Flask(__name__)
-@app.route('/') # this decorator create the home route
 
+@app.route('/') # this decorator create the home route
 def home ():
-    return '<h1>Welcome</h1>'
+    techs = ['HTML', 'CSS', 'Flask', 'Python']
+    name = '30 Days Of Python Programming'
+    return render_template('home.html', techs=techs, name = name, title = 'Home')
 
 @app.route('/about')
 def about():
-    return '<h1>About us</h1>'
+    name = '30 Days Of Python Programming'
+    return render_template('about.html', name = name, title = 'About Us')
 
+@app.route('/post')
+def post():
+    name = 'Text Analyzer'
+    return render_template('post.html', name = name, title = name)
 
 if __name__ == '__main__':
     # for deployment we use the environ
