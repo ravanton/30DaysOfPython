@@ -7,7 +7,7 @@ import os # importing operating system module
 import pymongo
 from pymongo import MongoClient
 
-MONGODB_URI = 'mongodb+srv://ar:123@atlascluster.r7zx6vu.mongodb.net/?retryWrites=true&w=majority'
+MONGODB_URI = ''
 client = pymongo.MongoClient(MONGODB_URI)
 
 # Creating database
