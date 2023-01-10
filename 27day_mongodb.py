@@ -26,6 +26,14 @@ students = db.students.find()
 for student in students:
     print(student)
 
+# # Find with Query
+query = {
+    "city":"UK"
+}
+students = db.students.find(query)
+for student in students:
+    print(student)
+
 
 app = Flask(__name__)
 if __name__ == '__main__':

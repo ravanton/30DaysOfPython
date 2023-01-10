@@ -20,6 +20,18 @@ students = [
 for student in students:
     db.students.insert_one(student)
 print(client.list_database_names())
+# find students
+students = db.students.find()
+for student in students:
+    print(student)
+    
+# Find with Query
+query = {
+    "city":"UK"
+}
+students = db.students.find(query)
+for student in students:
+    print(student)
 
 app = Flask(__name__)
 if __name__ == '__main__':
