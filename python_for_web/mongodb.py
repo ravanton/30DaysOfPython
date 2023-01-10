@@ -18,7 +18,7 @@ students = [
         {'name':'Sami','country':'Finland','city':'Helsinki','age':25},
     ]
 for student in students:
-    db.students.insert_many(student)
+    db.students.insert_one(student)
 print(client.list_database_names())
 
 app = Flask(__name__)
