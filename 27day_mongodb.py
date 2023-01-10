@@ -28,7 +28,7 @@ for student in students:
 
 # # Find with Query
 query = {
-    "city":"UK"
+    "country":"UK"
 }
 students = db.students.find(query)
 for student in students:

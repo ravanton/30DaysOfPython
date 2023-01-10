@@ -24,13 +24,23 @@ print(client.list_database_names())
 students = db.students.find()
 for student in students:
     print(student)
-    
+
 # Find with Query
 query = {
-    "city":"UK"
+    "country":"UK"
 }
 students = db.students.find(query)
 for student in students:
+    print(student)
+
+# remove one John from the collection.
+query = {'name':'John'}
+db.students.delete_one(query)
+
+for student in db.students.find():
+    print(student)
+# lets check the result if the age is modified
+for student in db.students.find():
     print(student)
 
 app = Flask(__name__)
