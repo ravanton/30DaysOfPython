@@ -42,7 +42,9 @@ for student in db.students.find():
 # lets check the result if the age is modified
 for student in db.students.find():
     print(student)
-
+    
+# Using the drop() method we can delete a collection from a database.     
+db.students.drop()
 app = Flask(__name__)
 if __name__ == '__main__':
     # for deployment we use the environ
