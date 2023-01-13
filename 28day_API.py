@@ -11,3 +11,16 @@
 # PUT: заменяет все текущие представления целевого ресурса загруженным контентом, и мы используем его для изменения или обновления данных.
 
 # DELETE: удаляет данные
+# Structure of HTTP
+# HTTP uses client-server model. An HTTP client opens a connection and sends a request message to an HTTP server and the HTTP server returns response message which is the requested resources. When the request response cycle completes the server closes the connection.
+
+# HTTP request response cycle
+
+# The format of the request and response messages are similar. Both kinds of messages have
+
+# an initial line,
+# zero or more header lines,
+# a blank line (i.e. a CRLF by itself), and
+# an optional message body (e.g. a file, or query data, or query output).
+# Let us an example of request and response messages by navigating this site:https://thirtydaysofpython-v1-final.herokuapp.com/. This site has been deployed on Heroku free dyno and in some months may not work because of high request. Support this work to make the server run all the time.
+
