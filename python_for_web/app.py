@@ -38,19 +38,19 @@ def post():
 def students ():
     student_list = [
         {
-            'name':'Asabeneh',
+            'name':'Garry',
             'country':'Finland',
             'city':'Helsinki',
             'skills':['HTML', 'CSS','JavaScript','Python']
         },
         {
-            'name':'David',
+            'name':'Rone',
             'country':'UK',
             'city':'London',
             'skills':['Python','MongoDB']
         },
         {
-            'name':'John',
+            'name':'Harmione',
             'country':'Sweden',
             'city':'Stockholm',
             'skills':['Java','C#']
