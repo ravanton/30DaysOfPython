@@ -1,6 +1,7 @@
 # let's import the flask
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, Response
 import os # importing operating system module
+import json
 
 app = Flask(__name__)
 # to stop caching static file
@@ -31,6 +32,31 @@ def post():
         content = request.form['content']
         print(content)
         return redirect(url_for('result'))
+
+
+@app.route('/api/v1.0/students', methods = ['GET'])
+def students ():
+    student_list = [
+        {
+            'name':'Asabeneh',
+            'country':'Finland',
+            'city':'Helsinki',
+            'skills':['HTML', 'CSS','JavaScript','Python']
+        },
+        {
+            'name':'David',
+            'country':'UK',
+            'city':'London',
+            'skills':['Python','MongoDB']
+        },
+        {
+            'name':'John',
+            'country':'Sweden',
+            'city':'Stockholm',
+            'skills':['Java','C#']
+        }
+    ]
+    return Response(json.dumps(student_list), mimetype='application/json')
 
 if __name__ == '__main__':
     # for deployment we use the environ
